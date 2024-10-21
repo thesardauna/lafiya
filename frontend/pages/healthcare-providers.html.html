@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LAFIYA - Find Healthcare Providers Across Nigeria">
+    <title>LAFIYA - Healthcare Providers</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="LAFIYA Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="healthcare-providers.html" class="active">Healthcare Providers</a></li>
+                    <li><a href="disease-profiles.html">Disease Profiles</a></li>
+                    <li><a href="telemedicine.html">Telemedicine</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#!" class="btn-primary">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Find Healthcare Providers</h1>
+            <p>Search for hospitals, clinics, and doctors near you to get the care you need.</p>
+        </div>
+    </section>
+
+    <!-- Search Filters Section -->
+    <section class="search-filters">
+        <div class="container">
+            <h2>Search Healthcare Providers</h2>
+            <form action="#" method="GET">
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Enter city or region">
+                </div>
+                <div class="form-group">
+                    <label for="specialty">Specialty</label>
+                    <select id="specialty" name="specialty">
+                        <option value="">All Specialties</option>
+                        <option value="general-medicine">General Medicine</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="gynecology">Gynecology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <!-- Add more specialties as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="insurance">Insurance Provider</label>
+                    <input type="text" id="insurance" name="insurance" placeholder="Enter your insurance provider">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Provider List Section -->
+    <section class="provider-list">
+        <div class="container">
+            <h2>Healthcare Providers Near You</h2>
+            <div class="provider-card">
+                <img src="images/hospital.png" alt="Hospital Image">
+                <div class="provider-info">
+                    <h3>Lagos General Hospital</h3>
+                    <p><strong>Specialties:</strong> General Medicine, Pediatrics</p>
+                    <p><strong>Location:</strong> Lagos, Nigeria</p>
+                    <p><strong>Available Appointments:</strong> Monday - Friday, 9 AM - 5 PM</p>
+                    <a href="provider-details.html" class="btn-primary">View Profile</a>
+                </div>
+            </div>
+
+            <div class="provider-card">
+                <img src="images/clinic.png" alt="Clinic Image">
+                <div class="provider-info">
+                    <h3>Abuja Health Clinic</h3>
+                    <p><strong>Specialties:</strong> Dermatology, Gynecology</p>
+                    <p><strong>Location:</strong> Abuja, Nigeria</p>
+                    <p><strong>Available Appointments:</strong> Tuesday - Saturday, 10 AM - 6 PM</p>
+                    <a href="provider-details.html" class="btn-primary">View Profile</a>
+                </div>
+            </div>
+
+            <div class="provider-card">
+                <img src="images/doctor.png" alt="Doctor Image">
+                <div class="provider-info">
+                    <h3>Dr. John Doe</h3>
+                    <p><strong>Specialties:</strong> Cardiology, Neurology</p>
+                    <p><strong>Location:</strong> Port Harcourt, Nigeria</p>
+                    <p><strong>Available Appointments:</strong> Monday - Thursday, 8 AM - 4 PM</p>
+                    <a href="provider-details.html" class="btn-primary">View Profile</a>
+                </div>
+            </div>
+
+            <!-- Add more provider cards as needed -->
+
+        </div>
+    </section>
+
+    <!-- Book an Appointment Section -->
+    <section class="book-appointment">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <p>Find the right healthcare provider and book your appointment online with ease.</p>
+            <a href="telemedicine.html" class="btn-primary">Book a Telemedicine Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>About LAFIYA</h4>
+                    <p>LAFIYA is a comprehensive healthcare marketplace connecting patients with healthcare providers across Nigeria. We offer secure, accessible, and personal care for all.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="healthcare-providers.html">Healthcare Providers</a></li>
+                        <li><a href="telemedicine.html">Telemedicine</a></li>
+                        <li><a href="disease-profiles.html">Disease Profiles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@lafiya.ng</p>
+                    <p>Phone: +234 800 123 4567</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LAFIYA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

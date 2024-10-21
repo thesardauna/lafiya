@@ -1,0 +1,212 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #E0F2F1; /* Mint Green for a welcoming environment */
+    color: #333; /* Dark color for text for readability */
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #009688; /* Primary Turquoise color */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+    color: #FFECB3; /* Sand Yellow for hover effect */
+}
+
+.btn-primary {
+    background-color: #FF9800; /* Highlight Bright Orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #FFECB3; /* Sand Yellow for hover effect */
+    color: #00796B; /* Deep Turquoise text for contrast */
+}
+
+/* Page Headers */
+.page-header {
+    background-color: #009688; /* Primary Turquoise color */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.page-header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.page-header p {
+    font-size: 1.2em;
+}
+
+/* Form Styles */
+.contact-form-section {
+    background-color: #FFECB3; /* Sand Yellow for a warm feel */
+    padding: 40px 20px;
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00796B; /* Deep Turquoise for emphasis */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00796B; /* Deep Turquoise for labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00796B; /* Deep Turquoise border */
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #009688; /* Primary Turquoise when focused */
+}
+
+.form-group button {
+    background-color: #FF9800; /* Bright Orange for call-to-action */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #00796B; /* Deep Turquoise on hover */
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    padding: 40px 20px;
+    background-color: #E0F2F1; /* Mint Green for consistency */
+}
+
+.contact-info-section h2 {
+    color: #009688; /* Primary Turquoise color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.social-media img:hover {
+    filter: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00796B; /* Deep Turquoise for depth and stability */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul a {
+    color: #FFECB3; /* Sand Yellow for links */
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #009688; /* Primary Turquoise for continuity */
+    color: white;
+    padding: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+}

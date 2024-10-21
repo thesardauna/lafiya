@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LAFIYA - Disease Profiles and Health Information">
+    <title>LAFIYA - Disease Profiles</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="LAFIYA Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="healthcare-providers.html">Healthcare Providers</a></li>
+                    <li><a href="disease-profiles.html" class="active">Disease Profiles</a></li>
+                    <li><a href="telemedicine.html">Telemedicine</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#!" class="btn-primary">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Disease Profiles</h1>
+            <p>Find information about diseases, their symptoms, treatments, and how to prevent them.</p>
+        </div>
+    </section>
+
+    <!-- Search Filters Section -->
+    <section class="search-filters">
+        <div class="container">
+            <h2>Search Disease Profiles</h2>
+            <form action="#" method="GET">
+                <div class="form-group">
+                    <label for="disease-name">Disease Name</label>
+                    <input type="text" id="disease-name" name="disease-name" placeholder="Enter disease name">
+                </div>
+                <div class="form-group">
+                    <label for="symptoms">Symptoms</label>
+                    <input type="text" id="symptoms" name="symptoms" placeholder="Enter symptoms (e.g. fever, headache)">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Disease Profiles Section -->
+    <section class="disease-profiles">
+        <div class="container">
+            <h2>Common Diseases</h2>
+            
+            <!-- Disease Card Example 1 -->
+            <div class="disease-card">
+                <h3>Malaria</h3>
+                <p><strong>Symptoms:</strong> Fever, chills, headache, nausea.</p>
+                <p><strong>Treatment:</strong> Antimalarial medication such as artemisinin-based combination therapy (ACT).</p>
+                <p><strong>Prevention:</strong> Use of insecticide-treated mosquito nets, indoor spraying with insecticides, antimalarial prophylaxis.</p>
+                <a href="malaria-details.html" class="btn-primary">Learn More</a>
+            </div>
+
+            <!-- Disease Card Example 2 -->
+            <div class="disease-card">
+                <h3>COVID-19</h3>
+                <p><strong>Symptoms:</strong> Fever, cough, shortness of breath, loss of taste or smell.</p>
+                <p><strong>Treatment:</strong> Supportive care, antiviral medications, and in severe cases, mechanical ventilation.</p>
+                <p><strong>Prevention:</strong> Vaccination, wearing masks, social distancing, frequent hand washing.</p>
+                <a href="covid19-details.html" class="btn-primary">Learn More</a>
+            </div>
+
+            <!-- Disease Card Example 3 -->
+            <div class="disease-card">
+                <h3>Diabetes</h3>
+                <p><strong>Symptoms:</strong> Increased thirst, frequent urination, fatigue, blurred vision.</p>
+                <p><strong>Treatment:</strong> Insulin therapy, oral medications, lifestyle changes (diet and exercise).</p>
+                <p><strong>Prevention:</strong> Maintaining a healthy diet, regular physical activity, and managing weight.</p>
+                <a href="diabetes-details.html" class="btn-primary">Learn More</a>
+            </div>
+
+            <!-- Add more disease cards as needed -->
+
+        </div>
+    </section>
+
+    <!-- Educational Content Section -->
+    <section class="educational-content">
+        <div class="container">
+            <h2>Health Resources and Educational Content</h2>
+            <p>Explore a wide range of articles, guides, and videos on various health topics, including disease prevention, treatment options, and healthy living tips.</p>
+            <a href="resources.html" class="btn-primary">Explore Resources</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>About LAFIYA</h4>
+                    <p>LAFIYA is a comprehensive healthcare marketplace connecting patients with healthcare providers across Nigeria. We offer secure, accessible, and personal care for all.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="healthcare-providers.html">Healthcare Providers</a></li>
+                        <li><a href="disease-profiles.html">Disease Profiles</a></li>
+                        <li><a href="telemedicine.html">Telemedicine</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@lafiya.ng</p>
+                    <p>Phone: +234 800 123 4567</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LAFIYA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

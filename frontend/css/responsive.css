@@ -1,0 +1,158 @@
+/* Mobile First Responsive Design */
+
+/* General Styles for small devices (default styles for mobile) */
+body {
+    font-size: 16px; /* Default size for better readability on small screens */
+}
+
+.header, .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.navbar .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar .nav-links li {
+    margin: 10px 0;
+}
+
+.page-header h1 {
+    font-size: 1.8em; /* Smaller header size on mobile */
+}
+
+.page-header p {
+    font-size: 1em; /* Adjusted paragraph size */
+}
+
+.form-group input,
+.form-group textarea {
+    font-size: 1em;
+    padding: 8px;
+}
+
+/* Footer Adjustments */
+.footer-columns {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-column h4 {
+    font-size: 1.2em;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+/* Tablet Devices */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .header, .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar .nav-links {
+        flex-direction: row;
+    }
+
+    .page-header h1 {
+        font-size: 2.2em; /* Slightly larger headers on tablets */
+    }
+
+    .footer-columns {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* Large Devices (Desktops and larger tablets) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .navbar .nav-links {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .page-header h1 {
+        font-size: 2.5em;
+    }
+
+    .page-header p {
+        font-size: 1.2em;
+    }
+
+    .contact-form-section, .contact-info-section {
+        padding: 60px 20px;
+    }
+}
+
+/* Responsive Grid Adjustments */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablets and larger devices */
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns for desktops */
+    }
+}
+
+/* Responsive Image Styles */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Button Adjustments */
+.btn-primary, .form-group button {
+    font-size: 0.9em;
+    padding: 12px 25px;
+}
+
+.btn-primary:hover {
+    background-color: #FFECB3; /* Maintain hover effect consistency */
+}
+
+/* Responsive Table Styles */
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-responsive th, .table-responsive td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Media Queries for Large Screens */
+@media (min-width: 1440px) {
+    body {
+        font-size: 18px; /* Larger font for big screens */
+    }
+
+    .page-header h1 {
+        font-size: 3em; /* Larger headers for high-resolution displays */
+    }
+}

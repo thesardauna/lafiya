@@ -1,0 +1,172 @@
+/* Theme Colors */
+
+/* Primary Colors */
+:root {
+    --primary-color: #009688; /* Turquoise */
+    --primary-color-light: #33a69d;
+    --primary-color-dark: #00796b;
+
+    /* Secondary Colors */
+    --secondary-color: #FFECB3; /* Sand Yellow */
+    --secondary-color-light: #fff9c4;
+    --secondary-color-dark: #ffe082;
+
+    /* Accent Colors */
+    --accent-color: #00796B; /* Deep Turquoise */
+    --accent-color-light: #339688;
+    --accent-color-dark: #004d40;
+
+    /* Background Colors */
+    --background-color: #E0F2F1; /* Mint Green */
+    --background-light: #f1fdfc;
+    --background-dark: #b2dfdb;
+
+    /* Highlight Colors */
+    --highlight-color: #FF9800; /* Bright Orange */
+    --highlight-color-light: #ffc947;
+    --highlight-color-dark: #c66900;
+
+    /* Text Colors */
+    --text-color-primary: #333; /* Dark Gray */
+    --text-color-secondary: #666; /* Medium Gray */
+    --text-color-light: #fff; /* White */
+}
+
+/* General Usage of Colors */
+
+/* Primary Color Usage */
+.header,
+.call-to-action,
+.key-section {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+}
+
+.call-to-action:hover,
+.button-primary:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/* Secondary Color Usage */
+.sidebar,
+.secondary-background {
+    background-color: var(--secondary-color);
+    color: var(--text-color-primary);
+}
+
+.secondary-background:hover {
+    background-color: var(--secondary-color-dark);
+}
+
+/* Accent Color Usage */
+.border-highlight,
+.icon-highlight,
+.text-accent {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.text-accent-dark {
+    color: var(--accent-color-dark);
+}
+
+/* Background Color Usage */
+body,
+.main-background {
+    background-color: var(--background-color);
+}
+
+.card,
+.section-background-light {
+    background-color: var(--background-light);
+}
+
+/* Highlight Color Usage */
+.alert,
+.notification,
+.promo-banner {
+    background-color: var(--highlight-color);
+    color: var(--text-color-light);
+}
+
+.alert:hover,
+.notification:hover {
+    background-color: var(--highlight-color-dark);
+}
+
+/* Link and Button Colors */
+a,
+a:visited {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--primary-color-dark);
+}
+
+.btn-primary,
+.btn-primary:active {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-color-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.btn-secondary {
+    background-color: var(--highlight-color);
+    color: var(--text-color-light);
+}
+
+.btn-secondary:hover {
+    background-color: var(--highlight-color-dark);
+}
+
+/* Footer Colors */
+.footer {
+    background-color: var(--accent-color-dark);
+    color: var(--text-color-light);
+}
+
+.footer a {
+    color: var(--secondary-color-dark);
+}
+
+.footer a:hover {
+    color: var(--highlight-color);
+}
+
+/* Utility Classes for Color */
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.bg-highlight {
+    background-color: var(--highlight-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-highlight {
+    color: var(--highlight-color);
+}
