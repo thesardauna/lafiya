@@ -94,5 +94,29 @@
     </footer>
 
     <script src="scripts/functions.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAfs218C8cgx4vujqp_vaXgUB4qtqejrGA",
+          authDomain: "lafiya-a1c20.firebaseapp.com",
+          projectId: "lafiya-a1c20",
+          storageBucket: "lafiya-a1c20.firebasestorage.app",
+          messagingSenderId: "614436550457",
+          appId: "1:614436550457:web:d6cfe61b4733c250ffdae8",
+          measurementId: "G-E49S1TXM6J"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
