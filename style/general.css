@@ -7,126 +7,80 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #E0F2F1;
     color: #333;
-    line-height: 1.6;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
+    overflow: hidden;
 }
 
-/* Header Section */
-.hero {
-    background-color: #009688;
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #009688;
+    padding: 1rem;
+}
+
+.logo {
+    width: 150px;
+}
+
+.main-menu, .right-menu {
+    display: flex;
+    list-style: none;
+}
+
+.main-menu li a, .right-menu li a {
     color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.showcase {
+    background: #E0F2F1;
+    padding: 4rem;
     text-align: center;
-    padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero .tagline {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.hero button {
-    padding: 10px 20px;
-    font-size: 16px;
+.showcase h2 {
     color: #009688;
-    background-color: #FF9800;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 2rem;
 }
 
-/* Quick Search */
-.quick-search {
-    background-color: #FFECB3;
-    padding: 40px 0;
-    text-align: center;
+.showcase p {
+    margin: 1rem 0;
+    color: #00796B;
 }
 
-.quick-search h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.quick-search input {
-    padding: 10px;
-    width: 60%;
-    max-width: 400px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.quick-search button {
-    padding: 10px 20px;
-    background-color: #00796B;
+.btn {
+    background: #FF9800;
     color: #fff;
-    border: none;
+    padding: 0.8rem 1.5rem;
     border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
 }
 
-/* Benefits Section */
-.benefits {
-    padding: 60px 0;
+.home-cards, .specialized-services, .health-wellness, .follow {
+    padding: 2rem;
     text-align: center;
 }
 
-.benefit-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
+.home-cards div, .specialized-services .content, .health-wellness .content {
+    background: #FFF;
+    margin: 1rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
 }
 
-.benefit-card {
-    background-color: #E0F2F1;
-    border: 2px solid #009688;
-    border-radius: 10px;
-    padding: 20px;
-    width: 30%;
-    margin: 10px;
-    text-align: center;
+.follow a {
+    display: inline-block;
+    margin: 0 0.5rem;
 }
 
-/* Features Section */
-.features {
-    background-color: #FFECB3;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.feature-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.feature-card {
-    background-color: #E0F2F1;
-    border: 2px solid #00796B;
-    border-radius: 10px;
-    padding: 20px;
-    width: 30%;
-    margin: 10px;
-    text-align: center;
-}
-
-/* Footer */
-.footer {
-    background-color: #009688;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+.follow p {
+    font-weight: bold;
+    color: #00796B;
 }
