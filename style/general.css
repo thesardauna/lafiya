@@ -84,31 +84,10 @@ body {
     font-weight: bold;
     color: #00796B;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
 
-.container {
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    padding: 2em;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-h1 {
-    text-align: center;
-    color: #333;
-}
 
-label {
-    font-weight: bold;
-    color: #333;
+
 }
 
 input[type="text"],
