@@ -1,0 +1,102 @@
+/* General Styles for the Find a Provider Page */
+.find-provider {
+    padding: 2rem;
+    text-align: center;
+}
+
+.find-provider h2 {
+    color: #009688;
+}
+
+.find-provider p {
+    color: #00796B;
+    margin-bottom: 2rem;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search-field {
+    margin: 1rem 0;
+}
+
+.search-field label {
+    font-weight: bold;
+    color: #009688;
+    display: block;
+}
+
+.search-field input,
+.search-field select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-field input:focus,
+.search-field select:focus {
+    border-color: #009688;
+    outline: none;
+}
+
+.btn {
+    background: #FF9800;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.provider-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.provider-card {
+    background: #FFECB3;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.provider-info h4 {
+    color: #009688;
+}
+
+.provider-info p {
+    color: #00796B;
+    margin-bottom: 1rem;
+}
+
+.provider-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .provider-list {
+        flex-direction: column;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    .search-field input,
+    .search-field select {
+        max-width: 100%;
+    }
+}
