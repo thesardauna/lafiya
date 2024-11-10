@@ -11,7 +11,7 @@ body {
     background-color: #E0F2F1;
 }
 
-/* Navigation */
+/* Navigation Bar */
 .main-nav {
     display: flex;
     justify-content: space-between;
@@ -20,10 +20,14 @@ body {
     padding: 1rem;
 }
 
-/* Remove bullet points from menu items */
+.logo {
+    width: 150px;
+    margin-right: 2rem;
+}
+
 .main-menu, .right-menu {
     display: flex;
-    list-style: none; /* Removes bullets */
+    list-style: none;
 }
 
 .main-menu li a, .right-menu li a {
@@ -82,10 +86,9 @@ body {
     color: #00796B;
 }
 
-/* Footer */
 .footer {
     background: #009688;
     color: #fff;
     padding: 1rem;
-    text-align: center; /* Centers footer text */
+    text-align: center;
 }
