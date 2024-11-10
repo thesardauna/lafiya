@@ -8,13 +8,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #333;
-    background-color: #E0F2F1; /* Background Color: Mint Green */
-}
-
-.container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+    background-color: #E0F2F1;
 }
 
 /* Navigation */
@@ -22,17 +16,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #009688; /* Primary Color: Turquoise */
+    background: #009688;
     padding: 1rem;
 }
 
-.logo {
-    width: 150px;
-}
-
+/* Remove bullet points from menu items */
 .main-menu, .right-menu {
     display: flex;
-    list-style: none;
+    list-style: none; /* Removes bullets */
 }
 
 .main-menu li a, .right-menu li a {
@@ -42,64 +33,59 @@ body {
 }
 
 /* Showcase */
-.showcase {
-    background: #E0F2F1; /* Background Color */
-    padding: 4rem;
-    text-align: center;
-}
-
-.showcase h2 {
-    color: #009688; /* Primary Color */
-    font-size: 2rem;
-}
-
-.showcase p {
+.showcase, .card, .content {
+    display: flex;
+    align-items: center;
     margin: 1rem 0;
-    color: #00796B; /* Accent Color */
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.responsive-image {
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.showcase h2, .card h3, .content h2 {
+    color: #009688;
+}
+
+.showcase p, .card p, .content p {
+    color: #00796B;
+    margin-bottom: 1rem;
 }
 
 .btn {
-    background: #FF9800; /* Highlight Color */
+    background: #FF9800;
     color: #fff;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
 }
 
-/* Responsive Images */
-.responsive-image {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    margin-top: 1rem;
-}
-
-/* Sections */
-.home-cards, .specialized-services, .health-wellness, .follow, .footer {
-    padding: 2rem;
-    text-align: center;
-}
-
-.home-cards div, .specialized-services .content, .health-wellness .content {
-    background: #FFECB3; /* Secondary Color: Sand Yellow */
-    margin: 1rem;
-    padding: 2rem;
+/* Cards and Content Sections */
+.home-cards .card, .specialized-services .content, .health-wellness .content {
+    background: #FFECB3;
     border: 1px solid #ddd;
+    padding: 1.5rem;
 }
 
-.follow a {
-    display: inline-block;
-    margin: 0 0.5rem;
-}
-
-.follow p, .footer p {
+/* Follow and Footer Sections */
+.follow p {
     font-weight: bold;
-    color: #00796B; /* Accent Color */
+    color: #00796B;
 }
 
 /* Footer */
 .footer {
-    background: #009688; /* Primary Color */
+    background: #009688;
     color: #fff;
     padding: 1rem;
+    text-align: center; /* Centers footer text */
 }
