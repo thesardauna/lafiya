@@ -8,6 +8,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #333;
+    background-color: #E0F2F1; /* Background Color: Mint Green */
 }
 
 .container {
@@ -16,11 +17,12 @@ body {
     overflow: hidden;
 }
 
+/* Navigation */
 .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #009688;
+    background: #009688; /* Primary Color: Turquoise */
     padding: 1rem;
 }
 
@@ -39,37 +41,47 @@ body {
     text-decoration: none;
 }
 
+/* Showcase */
 .showcase {
-    background: #E0F2F1;
+    background: #E0F2F1; /* Background Color */
     padding: 4rem;
     text-align: center;
 }
 
 .showcase h2 {
-    color: #009688;
+    color: #009688; /* Primary Color */
     font-size: 2rem;
 }
 
 .showcase p {
     margin: 1rem 0;
-    color: #00796B;
+    color: #00796B; /* Accent Color */
 }
 
 .btn {
-    background: #FF9800;
+    background: #FF9800; /* Highlight Color */
     color: #fff;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
 }
 
-.home-cards, .specialized-services, .health-wellness, .follow {
+/* Responsive Images */
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin-top: 1rem;
+}
+
+/* Sections */
+.home-cards, .specialized-services, .health-wellness, .follow, .footer {
     padding: 2rem;
     text-align: center;
 }
 
 .home-cards div, .specialized-services .content, .health-wellness .content {
-    background: #FFF;
+    background: #FFECB3; /* Secondary Color: Sand Yellow */
     margin: 1rem;
     padding: 2rem;
     border: 1px solid #ddd;
@@ -80,7 +92,14 @@ body {
     margin: 0 0.5rem;
 }
 
-.follow p {
+.follow p, .footer p {
     font-weight: bold;
-    color: #00796B;
+    color: #00796B; /* Accent Color */
+}
+
+/* Footer */
+.footer {
+    background: #009688; /* Primary Color */
+    color: #fff;
+    padding: 1rem;
 }
