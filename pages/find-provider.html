@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Provider - LAFIYA Healthcare Marketplace</title>
+    <link rel="stylesheet" href="style/general.css">
+    <script src="scripts/functions.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="main-nav">
+            <a href="#">
+                <img src="images/Lafiya_LOGO_text.png" alt="LAFIYA Logo" class="logo">
+            </a>
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find-provider.html">Find a Provider</a></li>
+                <li><a href="#">Patient Portal</a></li>
+                <li><a href="#">Health Resources</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+            <ul class="right-menu">
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- Find a Provider Section -->
+        <section class="find-provider">
+            <h2>Find a Healthcare Provider</h2>
+            <p>Search for doctors, specialists, or healthcare facilities near you.</p>
+
+            <!-- Search Form -->
+            <form action="#" method="GET" class="search-form">
+                <div class="search-field">
+                    <label for="provider-name">Provider Name</label>
+                    <input type="text" id="provider-name" name="provider-name" placeholder="Enter provider name" />
+                </div>
+                <div class="search-field">
+                    <label for="specialty">Specialty</label>
+                    <select id="specialty" name="specialty">
+                        <option value="">Select Specialty</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="dentistry">Dentistry</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="search-field">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Enter location (city, state)" />
+                </div>
+                <button type="submit" class="btn">Search Providers <i class="fas fa-search"></i></button>
+            </form>
+
+            <!-- Providers List Section -->
+            <section class="provider-list">
+                <h3>Healthcare Providers Near You</h3>
+                <div class="provider-card">
+                    <div class="provider-info">
+                        <h4>Dr. John Doe</h4>
+                        <p>Cardiologist</p>
+                        <p>Location: New York, NY</p>
+                        <a href="#" class="btn">View Profile <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <img src="images/doctor1.jpg" alt="Dr. John Doe" class="provider-image">
+                </div>
+                <div class="provider-card">
+                    <div class="provider-info">
+                        <h4>Dr. Jane Smith</h4>
+                        <p>Dermatologist</p>
+                        <p>Location: Los Angeles, CA</p>
+                        <a href="#" class="btn">View Profile <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <img src="images/doctor2.jpg" alt="Dr. Jane Smith" class="provider-image">
+                </div>
+                <!-- Add more providers here -->
+            </section>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; 2024 LAFIYA Healthcare Marketplace. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
