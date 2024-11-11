@@ -4,13 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
     color: #333;
     background-color: #E0F2F1;
 }
-
 /* Navigation Bar */
 .main-nav {
     display: flex;
@@ -19,76 +17,140 @@ body {
     background: #009688;
     padding: 1rem;
 }
-
 .logo {
     width: 150px;
     margin-right: 2rem;
 }
-
 .main-menu, .right-menu {
     display: flex;
     list-style: none;
 }
-
 .main-menu li a, .right-menu li a {
     color: #fff;
     padding: 0.5rem 1rem;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
-
+.main-menu li a:hover, .right-menu li a:hover {
+    color: #FF9800;
+}
 /* Showcase */
 .showcase, .card, .content {
     display: flex;
     align-items: center;
     margin: 1rem 0;
 }
-
 .text-content {
     flex: 1;
     text-align: left;
     padding-right: 1rem;
 }
-
 .responsive-image {
     flex: 1;
     width: 100%;
     max-width: 400px;
     height: auto;
+    animation: fadeIn 1s ease-in-out;
 }
-
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 .showcase h2, .card h3, .content h2 {
     color: #009688;
+    animation: slideInLeft 1s ease-in-out;
 }
-
 .showcase p, .card p, .content p {
     color: #00796B;
     margin-bottom: 1rem;
+    animation: slideInRight 1s ease-in-out;
 }
-
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 .btn {
     background: #FF9800;
     color: #fff;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
+    transition: background 0.3s ease-in-out;
 }
-
+.btn:hover {
+    background: #FFA726;
+}
 /* Cards and Content Sections */
 .home-cards .card, .specialized-services .content, .health-wellness .content {
     background: #FFECB3;
     border: 1px solid #ddd;
     padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
-
+.home-cards .card:hover, .specialized-services .content:hover, .health-wellness .content:hover {
+    transform: translateY(-5px);
+}
 /* Follow and Footer Sections */
 .follow p {
     font-weight: bold;
     color: #00796B;
+    animation: fadeIn 1s ease-in-out;
 }
-
+.follow img {
+    width: 32px;
+    height: 32px;
+    margin: 0 0.5rem;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 .footer {
     background: #009688;
     color: #fff;
     padding: 1rem;
     text-align: center;
+    animation: slideInUp 1s ease-in-out;
+}
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
